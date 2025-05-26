@@ -1,0 +1,317 @@
+body{
+  margin:0;
+  padding:0;
+  background-image:url(./images/bg.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position:center;
+  height: 90vh;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  font-family:serif;
+  margin-top: 30px;
+  
+  animation: my-animation 5s linear infinite;
+
+}
+@keyframes my-animation {
+     from{
+       color:black
+     }
+     to{
+       color:white;
+     }
+}
+.box1{
+  position: absolute;
+  top:20%;
+  left:5%;
+   background-color: rgba(250, 235, 215, 0.564);
+  height:400px;
+  width:300px;
+  border-radius: 10px;
+}
+.box1 img{
+  position: absolute;
+  left:-0%;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+.box1 p{
+  position: absolute;
+  top:55%;
+  left:6%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.box1 .merge{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:75%;
+  left:5%;
+  gap:30px;
+}
+.box1 .merge a{
+  text-decoration: none;
+  color:darkgreen;
+  font-weight: bold;
+  font-size: 17px;
+}
+.box1 button{
+  position: absolute;
+  top:85%;
+  left:27%;
+  background-color:darkblue;
+  height:40px;
+  width: 130px;
+  border-radius: 5px;
+  color:white;
+  font-weight: bold;
+}
+.box1 button:hover{
+ background-color:rgb(35, 209, 82) ;
+ border-color: azure;
+ color: black;
+ border-width: 1px;
+}
+.box2{
+  position: absolute;
+  top:20%;
+  left:37%;
+   background-color: rgba(250, 235, 215, 0.564);
+  height:400px;
+  width:300px;
+  border-radius: 10px;
+}
+.box2 img{
+  position: absolute;
+  left:-0%;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+.box2 .p{
+  position: absolute;
+  top:55%;
+  left:6%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.box2 .merge1{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:75%;
+  left:6%;
+  gap:30px;
+}
+.box2 .merge1 .a{
+  text-decoration: none;
+  color:darkgreen;
+  font-weight: bold;
+  font-size: 17px;
+}
+.box2 .button1{
+  position: absolute;
+  top:85%;
+  left:30%;
+  background-color:darkblue;
+  height:40px;
+  width: 130px;
+  border-radius: 5px;
+  color:white;
+  font-weight: bold;
+}
+.box2 .button1:hover{
+ background-color:rgb(35, 209, 82) ;
+ border-color: azure;
+ color: black;
+ border-width: 1px;
+}
+.box3{
+  position: absolute;
+  top:20%;
+  left:68%;
+   background-color: rgba(250, 235, 215, 0.564);
+  height:400px;
+  width:300px;
+  border-radius: 10px;
+}
+.box3 img{
+  position: absolute;
+  left:-0%;
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+}
+.box3 .p{
+  position: absolute;
+  top:55%;
+  left:6%;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.box3 .merge2{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:75%;
+  left:6%;
+  gap:30px;
+}
+.box3 .merge2 .a1{
+  text-decoration: none;
+  color:darkgreen;
+  font-weight: bold;
+  font-size: 17px;
+}
+.box3 .button2{
+  position: absolute;
+  top:85%;
+  left:30%;
+  background-color:darkblue;
+  height:40px;
+  width: 130px;
+  border-radius: 5px;
+  color:white;
+  font-weight: bold;
+}
+.box3 .button2:hover{
+ background-color:rgb(35, 209, 82) ;
+ border-color: azure;
+ color: black;
+ border-width: 1px;
+}
+.box1:hover{
+  transform: scale(1.1);
+}
+.box2:hover{
+   transform: scale(1.1);
+}.box3:hover{
+  transform: scale(1.1);
+}
+ 
+@media (max-width: 1024px) {
+  .box1, .box2, .box3 {
+    width: 250px;
+    height: 380px;
+  }
+  
+  .box1 {
+    left: 3%;
+  }
+  
+  .box2 {
+    left: 35%;
+  }
+  
+  .box3 {
+    left: 67%;
+  }
+}
+ 
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  .box1, .box2, .box3 {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 20px auto;
+    left: auto;
+    top: auto;
+    padding-bottom: 20px;
+  }
+  
+  .box1 img, .box2 img, .box3 img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .box1 p, .box2 .p, .box3 .p {
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 15px;
+  }
+  
+  .box1 .merge, .box2 .merge1, .box3 .merge2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 15px 0;
+    justify-content: center;
+  }
+  
+  .box1 button, .box2 .button1, .box3 .button2 {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin: 0 auto;
+    display: block;
+  }
+}
+ 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .box1, .box2, .box3 {
+    width: 90%;
+  }
+  
+  .box1 .merge, .box2 .merge1, .box3 .merge2 {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .box1 a, .box2 .a, .box3 .a1 {
+    font-size: 15px;
+  }
+  
+  .box1 button, .box2 .button1, .box3 .button2 {
+    width: 120px;
+    height: 35px;
+    font-size: 14px;
+  }
+}
+ 
+@media (max-width: 400px) {
+  h1 {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .box1 p, .box2 .p, .box3 .p {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .box1 a, .box2 .a, .box3 .a1 {
+    font-size: 14px;
+  }
+}
